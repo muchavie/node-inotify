@@ -285,7 +285,7 @@ namespace NodeInotify {
 				}
 
 				if (try_catch.HasCaught()) {
-					Nan::FatalException(try_catch);
+					Nan::FatalException(try_catch);  // use nan scope
 				}
 			} // for
 		} // while
